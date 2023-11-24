@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_xs"
+    app:cardCornerRadius="@dimen/spacing_sm"
+    app:cardElevation="@dimen/spacing_xs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_sm"
+         >
+
+        <TextView
+            android:id="@+id/textNomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nome_label"
+            android:textSize="@dimen/txt_lg"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_lg"
+            app:layout_constraintBottom_toBottomOf="@id/textNomeLabel"
+            app:layout_constraintStart_toEndOf="@id/textNomeLabel"
+            app:layout_constraintTop_toTopOf="@id/textNomeLabel"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/textTelefoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_telefone_label"
+            android:textSize="@dimen/txt_md"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textNomeLabel" />
+
+        <TextView
+            android:id="@+id/textTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_md"
+            app:layout_constraintBottom_toBottomOf="@id/textTelefoneLabel"
+            app:layout_constraintStart_toEndOf="@id/textTelefoneLabel"
+            app:layout_constraintTop_toTopOf="@id/textTelefoneLabel"
+            tools:text="Description" />
+
+
+        <TextView
+            android:id="@+id/textDataNascimentoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_datanasc_label"
+            android:textSize="@dimen/txt_md"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTelefoneLabel" />
+
+        <TextView
+            android:id="@+id/textDataNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_md"
+            app:layout_constraintBottom_toBottomOf="@id/textDataNascimentoLabel"
+            app:layout_constraintStart_toEndOf="@id/textDataNascimentoLabel"
+            app:layout_constraintTop_toTopOf="@id/textDataNascimentoLabel"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/textDoencaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_doenca_label"
+            android:textSize="@dimen/txt_md"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textDataNascimentoLabel" />
+
+        <TextView
+            android:id="@+id/textDoenca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_md"
+            app:layout_constraintBottom_toBottomOf="@id/textDoencaLabel"
+            app:layout_constraintStart_toEndOf="@id/textDoencaLabel"
+            app:layout_constraintTop_toTopOf="@id/textDoencaLabel"
+            tools:text="Description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

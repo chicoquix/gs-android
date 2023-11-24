@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/registerPacienteFragment"
+        android:name="br.com.fiap.EngagementPatient.RegisterPacienteFragment"
+        android:label="fragment_register_paciente"
+        tools:layout="@layout/fragment_register_paciente" >
+        <action
+            android:id="@+id/action_registerPacienteFragment_to_pacienteFragment"
+            app:destination="@id/pacienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="br.com.fiap.EngagementPatient.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_pacienteFragment"
+            app:destination="@id/pacienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pacienteFragment"
+        android:name="br.com.fiap.EngagementPatient.PacienteFragment"
+        android:label="fragment_paciente_list"
+        tools:layout="@layout/fragment_paciente_list" >
+        <action
+            android:id="@+id/action_pacienteFragment_to_registerPacienteFragment"
+            app:destination="@id/registerPacienteFragment" />
+    </fragment>
+
+</navigation>

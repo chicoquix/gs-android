@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vitor_Francisco_Rm88930</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_paciente_success_registered_message">Paciente %s cadastrado com sucesso!</string>
+    <string name="text_nome_label">"Nome: "</string>
+    <string name="text_telefone_label">"Telefone: "</string>
+    <string name="text_datanasc_label">"Data de Nascimento: "</string>
+    <string name="text_doenca_label">"Ocorrencia: "</string>
+    <string name="text_welcome">Home</string>
+    <string name="text_list_page">Pacientes</string>
+</resources>
